@@ -61,3 +61,44 @@ body {
 #page li {
   margin-bottom: 10px;
 }
+
+#page > footer form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#page > footer form div#input-ground {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+#page > footer form div#input-ground #actions {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+}
+
+#page > footer form div#input-ground div#actions input {
+  padding: 8px;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 0;
+  width: 100%;
+}
+
+#page > footer form div#input-ground div#actions button {
+  cursor: pointer;
+}
+
+@media (min-width: 882px) {
+  #page > footer form {
+    align-items: center;
+  }
+  #page > footer form div#input-ground #actions {
+    width: 500px;
+  }
+}
